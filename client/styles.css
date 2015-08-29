@@ -3,3 +3,18 @@
 /* Note: an asteroid image is included in this repo.
 Feel free to use it if you like. */
 
+.enemy {
+  -webkit-animation: spinning 0.5s infinite linear;
+  -webkit-transform-origin: 50% 50%;
+}
+
+
+@keyframes spinning {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@-webkit-keyframes spinning {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
